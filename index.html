@@ -19,22 +19,22 @@
         <!-- paper.js canvas -->
 
 
-        <title></title>
+        <title>Shelby Cuaron</title>
     </head>
-    <body>
+    <body class="home">
 
             <ul class="nav justify-content-end">
   <li class="nav-item">
-    <a class="nav-link active" href="port.html">Home</a>
+    <a class="nav-link active" href="index.html">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">About</a>
+    <a class="nav-link" href="about.html">About</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Work</a>
+    <a class="nav-link" href="work.html">Work</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Contact</a>
+    <a class="nav-link" href="contact.html">Contact</a>
   </li>
 
 </ul>
@@ -42,11 +42,17 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
+            <br><br><br><br><br><br><br>
         <h1>shelby</h1>
-        <h3>dog-mom, developer, designer, something here</h3>
+        <h3>dog-mom, web developer, designer, and wine lover.</h3>
+
         </div>
         </div>
         </div>
+
+
+
+        <!-- //animation script -->
         <script type="text/paperscript" canvas="myCanvas">
 
             // The amount of circles we want to make:
@@ -55,8 +61,8 @@
             // Create a symbol, which we will use to place instances of later:
             var path = new Path.Circle({
                 center: [0, 0],
-                radius: 2.5,
-                fillColor: 'whitesmoke',
+                radius: 2,
+                fillColor: '#dfecec',
                  });
 
             var symbol = new Symbol(path);
@@ -78,7 +84,7 @@
 
                     // Move the item 1/20th of its width to the right. This way
                     // larger circles move faster than smaller circles:
-                    item.position.x += item.bounds.width / 7;
+                    item.position.x += item.bounds.width / 15;
 
                     // If the item has left the view on the right, move it back
                     // to the left:
